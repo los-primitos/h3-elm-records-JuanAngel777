@@ -2,7 +2,10 @@ module Helper exposing (..)
 
 import Html
 
+
+
 --simple exercises
+
 
 add2 : Int -> Int -> Int
 add2 int1 int2 =
@@ -17,6 +20,7 @@ add3 int1 int2 int3 =
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
 calc int1 int2 operator =
     operator int1 int2
+
 
 
 -- 1

@@ -2,7 +2,10 @@ module Main exposing (main)
 
 import Html
 
+
+
 -- 1
+
 
 type alias ProgrammingLanguage =
     { name : String
@@ -28,7 +31,10 @@ languageNames : List ProgrammingLanguage -> List String
 languageNames list =
     List.map .name list
 
+
+
 -- 2
+
 
 type alias User =
     { name : String
@@ -49,12 +55,16 @@ onlyStudents list =
         (\user ->
             if .uType user == "Student" then
                 .name user
+
             else
                 ""
         )
         list
 
+
+
 -- 3
+
 
 type alias Videogame =
     { title : String
@@ -86,7 +96,10 @@ getVideogameGenres : List Videogame -> List (List String)
 getVideogameGenres list =
     List.map .genres list
 
+
+
 -- 4
+
 
 type alias Computer =
     { ram : String
@@ -118,4 +131,3 @@ main =
                 ]
             ]
         ]
-
